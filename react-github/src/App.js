@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
+import UserCard from './Components/UserCard.js';
 
 class App extends React.Component {
   constructor() {
@@ -31,6 +32,8 @@ class App extends React.Component {
   render(){
   return (
     <div className="App">
+      <h1>Github User</h1>
+      <UserCard user={this.state.user}/>
     </div>
   )
 }
