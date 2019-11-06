@@ -33,3 +33,7 @@
 .foll-img{
   width: 50%;
 }
+.container{
+  display: flex;
+  margin-top: 5%;
+}

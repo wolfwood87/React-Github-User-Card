@@ -3,6 +3,15 @@ import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
 import UserCard from './Components/UserCard.js';
+import styled from 'styled-components';
+
+const Header = styled.div`
+  background-color: #061F23;
+`;
+const LightHeader = styled.h1`  
+  color: white;
+`;
+
 
 class App extends React.Component {
   constructor() {
@@ -31,10 +40,10 @@ class App extends React.Component {
   }
   render(){
   return (
-    <div className="App">
-      <h1>Github User</h1>
+    <Header className="App">
+      <LightHeader>Github User</LightHeader>
       <UserCard user={this.state.user}/>
-    </div>
+    </Header>
   )
 }
 }
